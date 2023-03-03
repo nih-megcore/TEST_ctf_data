@@ -1,0 +1,60 @@
+************************************************************
+DATE:
+03-Mar-2023 11:13
+
+OPERATOR:
+jstout
+
+APP:
+newDs 6.1.14-beta-el6_8.x86_64-20180116-3847
+
+/opt/ctf/bin/newDs -resample 4 -time 100 160 /data/ds004215/sub-ON02747/ses-01/meg/sub-ON02747_ses-01_task-haririhammer_run-01_meg.ds /data/ds004215/sub-ON02747_ses-01_task-haririhammer_run-01_meg.ds
+
+Input datasets: /data/ds004215/sub-ON02747/ses-01/meg/sub-ON02747_ses-01_task-haririhammer_run-01_meg.ds
+Save results as: /data/ds004215/sub-ON02747_ses-01_task-haririhammer_run-01_meg.ds
+Exclude non-SAM virtual channels.
+Bad channels will be excluded.
+Bad segments will be excluded.
+Viewing filter parameters will NOT be applied.
+Resaving data from 100.000000 to 160.000000 relative to trial sync.
+Overlap tolerance (sec): 0
+Event range: all target events.
+
+// Head Localization parameters.
+// 03-Mar-2023 11:13
+
+CustomDs
+{
+	FixSensors:	False
+}
+
+// PROCESSING PARAMETERS
+processing
+{
+	// balance: order, adapted
+	// (adapted=0 -> not adapted)
+	// (adapted=1 -> adapted)
+	balance:	3,0
+}
+
+// Data selector parameters.
+DsSelector
+{
+	RejectBadTrials:	TRUE
+	ForceEvenNumTargets:	FALSE
+	MaximumOverlap:	0
+	StartTime:	100
+	EndTime:	160
+	EventRange:	ALL
+	WholeTrial:	FALSE
+	CondSearchStart:	0
+	CondSearchEnd:	0
+	TargetTrialOffset:	0
+}
+
+
+RESULTS:
+Number of events/trials in new dataset = 1
+
+Maximum head movement: 0.3 mm at trial 1 for head coil Re
+Dataset's motion tolerance is 5.0mm

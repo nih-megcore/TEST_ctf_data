@@ -1,0 +1,308 @@
+PATH OF DATASET:
+/data/ds004215/sub-ON02747_ses-01_task-haririhammer_run-01_meg.ds
+
+
+NUMBER OF MARKERS:
+11
+
+
+CLASSGROUPID:
+3
+NAME:
+probe_face
+COMMENT:
+Autocomment
+COLOR:
+#0df3c5
+EDITABLE:
+Yes
+CLASSID:
+1
+NUMBER OF SAMPLES:
+15
+LIST OF SAMPLES:
+TRIAL NUMBER		TIME FROM SYNC POINT (in seconds)
+                   0				      +101.006666667
+                   0				      +105.023333333
+                   0				             +109.06
+                   0				      +113.193333333
+                   0				             +117.43
+                   0				      +121.613333333
+                   0				      +125.866666667
+                   0				      +129.983333333
+                   0				             +134.02
+                   0				      +138.103333333
+                   0				      +142.106666667
+                   0				      +146.173333333
+                   0				             +150.41
+                   0				      +154.493333333
+                   0				      +158.596666667
+
+
+CLASSGROUPID:
++3
+NAME:
+probe_match_happy
+COMMENT:
+Autocomment
+COLOR:
+#0c5263
+EDITABLE:
+Yes
+CLASSID:
++2
+NUMBER OF SAMPLES:
+8
+LIST OF SAMPLES:
+TRIAL NUMBER		TIME FROM SYNC POINT (in seconds)
+                   0				      +101.006666667
+                   0				      +113.193333333
+                   0				             +117.43
+                   0				      +121.613333333
+                   0				      +129.983333333
+                   0				             +134.02
+                   0				      +146.173333333
+                   0				      +154.493333333
+
+
+CLASSGROUPID:
++3
+NAME:
+response_hit
+COMMENT:
+Autocomment
+COLOR:
+#245746
+EDITABLE:
+Yes
+CLASSID:
++3
+NUMBER OF SAMPLES:
+15
+LIST OF SAMPLES:
+TRIAL NUMBER		TIME FROM SYNC POINT (in seconds)
+                   0				             +101.76
+                   0				      +105.716666667
+                   0				      +109.843333333
+                   0				                +114
+                   0				      +118.153333333
+                   0				             +122.41
+                   0				              +126.7
+                   0				      +130.886666667
+                   0				      +134.926666667
+                   0				      +138.726666667
+                   0				      +143.183333333
+                   0				      +146.933333333
+                   0				      +151.523333333
+                   0				      +155.376666667
+                   0				      +159.186666667
+
+
+CLASSGROUPID:
++3
+NAME:
+response_l
+COMMENT:
+Autocomment
+COLOR:
+#d8588c
+EDITABLE:
+Yes
+CLASSID:
++4
+NUMBER OF SAMPLES:
+6
+LIST OF SAMPLES:
+TRIAL NUMBER		TIME FROM SYNC POINT (in seconds)
+                   0				             +101.76
+                   0				      +105.716666667
+                   0				      +118.153333333
+                   0				             +122.41
+                   0				      +138.726666667
+                   0				      +146.933333333
+
+
+CLASSGROUPID:
++3
+NAME:
+encode_face
+COMMENT:
+Autocomment
+COLOR:
+#2757ae
+EDITABLE:
+Yes
+CLASSID:
++5
+NUMBER OF SAMPLES:
+14
+LIST OF SAMPLES:
+TRIAL NUMBER		TIME FROM SYNC POINT (in seconds)
+                   0				      +103.523333333
+                   0				      +107.526666667
+                   0				      +111.693333333
+                   0				      +115.913333333
+                   0				      +120.096666667
+                   0				             +124.35
+                   0				      +128.483333333
+                   0				      +132.486666667
+                   0				      +136.586666667
+                   0				      +140.586666667
+                   0				      +144.656666667
+                   0				             +148.89
+                   0				      +152.976666667
+                   0				      +157.076666667
+
+
+CLASSGROUPID:
++3
+NAME:
+encode_male
+COMMENT:
+Autocomment
+COLOR:
+#5851a5
+EDITABLE:
+Yes
+CLASSID:
++6
+NUMBER OF SAMPLES:
+7
+LIST OF SAMPLES:
+TRIAL NUMBER		TIME FROM SYNC POINT (in seconds)
+                   0				      +103.523333333
+                   0				      +107.526666667
+                   0				      +120.096666667
+                   0				      +128.483333333
+                   0				      +136.586666667
+                   0				      +140.586666667
+                   0				      +144.656666667
+
+
+CLASSGROUPID:
++3
+NAME:
+encode_sad
+COMMENT:
+Autocomment
+COLOR:
+#194d48
+EDITABLE:
+Yes
+CLASSID:
++7
+NUMBER OF SAMPLES:
+7
+LIST OF SAMPLES:
+TRIAL NUMBER		TIME FROM SYNC POINT (in seconds)
+                   0				      +103.523333333
+                   0				      +107.526666667
+                   0				             +124.35
+                   0				      +136.586666667
+                   0				      +140.586666667
+                   0				             +148.89
+                   0				      +157.076666667
+
+
+CLASSGROUPID:
++3
+NAME:
+probe_match_sad
+COMMENT:
+Autocomment
+COLOR:
+#099473
+EDITABLE:
+Yes
+CLASSID:
++8
+NUMBER OF SAMPLES:
+7
+LIST OF SAMPLES:
+TRIAL NUMBER		TIME FROM SYNC POINT (in seconds)
+                   0				      +105.023333333
+                   0				             +109.06
+                   0				      +125.866666667
+                   0				      +138.103333333
+                   0				      +142.106666667
+                   0				             +150.41
+                   0				      +158.596666667
+
+
+CLASSGROUPID:
++3
+NAME:
+response_r
+COMMENT:
+Autocomment
+COLOR:
+#3ac1e6
+EDITABLE:
+Yes
+CLASSID:
++9
+NUMBER OF SAMPLES:
+9
+LIST OF SAMPLES:
+TRIAL NUMBER		TIME FROM SYNC POINT (in seconds)
+                   0				      +109.843333333
+                   0				                +114
+                   0				              +126.7
+                   0				      +130.886666667
+                   0				      +134.926666667
+                   0				      +143.183333333
+                   0				      +151.523333333
+                   0				      +155.376666667
+                   0				      +159.186666667
+
+
+CLASSGROUPID:
++3
+NAME:
+encode_happy
+COMMENT:
+Autocomment
+COLOR:
+#fe4faf
+EDITABLE:
+Yes
+CLASSID:
++10
+NUMBER OF SAMPLES:
+7
+LIST OF SAMPLES:
+TRIAL NUMBER		TIME FROM SYNC POINT (in seconds)
+                   0				      +111.693333333
+                   0				      +115.913333333
+                   0				      +120.096666667
+                   0				      +128.483333333
+                   0				      +132.486666667
+                   0				      +144.656666667
+                   0				      +152.976666667
+
+
+CLASSGROUPID:
++3
+NAME:
+encode_female
+COMMENT:
+Autocomment
+COLOR:
+#d8b1f3
+EDITABLE:
+Yes
+CLASSID:
++11
+NUMBER OF SAMPLES:
+7
+LIST OF SAMPLES:
+TRIAL NUMBER		TIME FROM SYNC POINT (in seconds)
+                   0				      +111.693333333
+                   0				      +115.913333333
+                   0				             +124.35
+                   0				      +132.486666667
+                   0				             +148.89
+                   0				      +152.976666667
+                   0				      +157.076666667
+
+
