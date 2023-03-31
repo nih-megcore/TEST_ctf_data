@@ -34,4 +34,9 @@ cd ../PREBIDS/20010101/
 mvDs sub-ON02747_ses-01_task-airpuff_run-01_meg.ds  ABABABAB_airpuff_20010101_001.ds
 mvDs sub-ON02747_ses-01_task-haririhammer_run-01_meg.ds  ABABABAB_haririhammer_20010101_002.ds
 ```
+### AFNI functions
+# AFNI command to reface MRI data
+```
+@afni_refacer_run -input sub-ON02747_ses-01_acq-MPRAGE_T1w.nii.gz -mode_all -prefix ABABABAB -no_images
+```
 
