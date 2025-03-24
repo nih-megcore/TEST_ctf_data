@@ -1,0 +1,151 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 5230
+'[namystam@cn2881: Fri Mar 31 11:27:50 2023] ===================================\n[namystam@cn2881: Fri Mar 31 11:27:50 2023] === History of inputs to 3dcalc ===\n[namystam@cn2881: Fri Mar 31 11:27:50 2023] === Input a:\n[namystam@cn2881: Fri Mar 31 11:27:50 2023] [arshithab@cn1059: Mon Jul 18 13:46:22 2022] ===================================\n[arshithab@cn1059: Mon Jul 18 13:46:22 2022] === History of inputs to 3dcalc ===\n[arshithab@cn1059: Mon Jul 18 13:46:22 2022] === Input a:\n[arshithab@cn1059: Mon Jul 18 13:46:22 2022] [arshithab@cn1059: Mon Jul 18 13:28:35 2022] {AFNI_22.1.14:linux_centos_7_64} 3dcopy /data/BrainBlocks/joyce/openneuro_upload_prep_2022_07_18/dcm2bids_2022_05_12_renamed/sub-ON02747/ses-01/anat/sub-ON02747_ses-01_acq-MPRAGE_T1w.nii.gz /data/BrainBlocks/joyce/openneuro_upload_prep_2022_07_18/dcm2bids_2022_05_12_renamed_defaced/sub-ON02747/ses-01/anat/MPRAGE/__work_refacer.sub-ON02747_ses-01_acq-MPRAGE_T1w.kMoWbqn5sgw/tmp.00.INPUT.nii\n[arshithab@cn1059: Mon Jul 18 13:46:22 2022] === Input c:\n[arshithab@cn1059: Mon Jul 18 13:46:22 2022] [ptaylor@planchet: Sat Apr 23 12:50:39 2022] {AFNI_22.1.04:linux_ubuntu_16_64_glw_local_shared} 3dTcat -prefix afni_refacer_shell_sym_1.0.nii.gz afni_refacer_shell_sym_1.0.nii.gz __deface_02_inf_sli.nii\n[ptaylor@planchet: Sat Apr 23 12:50:39 2022] {AFNI_22.1.04:linux_ubuntu_16_64_glw_local_shared} 3drefit -sublabel 0 refacer afni_refacer_shell_sym_1.0.nii.gz\n[ptaylor@planchet: Sat Apr 23 12:50:40 2022] {AFNI_22.1.04:linux_ubuntu_16_64_glw_local_shared} 3drefit -sublabel 1 defacer afni_refacer_shell_sym_1.0.nii.gz\n[ptaylor@planchet: Sat Apr 23 12:50:41 2022] Created with @afni_refacer_make_master_addendum v3.0\n[arshithab@cn1059: Mon Jul 18 13:46:12 2022] {AFNI_22.1.14:linux_centos_7_64} 3dAllineate -1Dmatrix_apply tmp.03.mat_t2a.1D -source /usr/local/apps/afni/current/linux_centos_7_64/afni_refacer_shell_sym_1.0.nii.gz -final NN -prefix tmp.04.sh_t2a.nii -master tmp.00.INPUT.nii -float\n[arshithab@cn1059: Mon Jul 18 13:46:15 2022] {AFNI_22.1.14:linux_centos_7_64} 3dcalc -a tmp.04.sh_t2a.nii -expr 'a*bool(a)' -ISOLA -prefix tmp.05.sh_t2a_thr.nii\n[arshithab@cn1059: Mon Jul 18 13:46:17 2022] {AFNI_22.1.14:linux_centos_7_64} 3drefit -space ORIG tmp.05.sh_t2a_thr.nii\n[arshithab@cn1059: Mon Jul 18 13:46:22 2022] ===================================\n[arshithab@cn1059: Mon Jul 18 13:46:22 2022] {AFNI_22.1.14:linux_centos_7_64} 3dcalc -a tmp.00.INPUT.nii -c 'tmp.05.sh_t2a_thr.nii[1]' -expr 'a*not(bool(c))' -prefix tmp.99.result.deface.nii -datum float -ISOLA\n[arshithab@cn1059: Mon Jul 18 13:46:24 2022] {AFNI_22.1.14:linux_centos_7_64} 3dcalc -a tmp.80.nonshort_result.nii -expr a -datum short -nscale -prefix tmp.99.result.deface.nii\n[namystam@cn2881: Fri Mar 31 11:19:24 2023] {AFNI_23.0.07:linux_centos_7_64} 3dcopy sub-ON02747_ses-01_acq-MPRAGE_T1w.nii.gz ./__work_refacer.test0003.uOVXmQ8nYCa/tmp.00.INPUT.nii\n[namystam@cn2881: Fri Mar 31 11:27:50 2023] === Input c:\n[namystam@cn2881: Fri Mar 31 11:27:50 2023] [ptaylor@planchet: Sat Apr 23 12:50:39 2022] {AFNI_22.1.04:linux_ubuntu_16_64_glw_local_shared} 3dTcat -prefix afni_refacer_shell_sym_1.0.nii.gz afni_refacer_shell_sym_1.0.nii.gz __deface_02_inf_sli.nii\n[ptaylor@planchet: Sat Apr 23 12:50:39 2022] {AFNI_22.1.04:linux_ubuntu_16_64_glw_local_shared} 3drefit -sublabel 0 refacer afni_refacer_shell_sym_1.0.nii.gz\n[ptaylor@planchet: Sat Apr 23 12:50:40 2022] {AFNI_22.1.04:linux_ubuntu_16_64_glw_local_shared} 3drefit -sublabel 1 defacer afni_refacer_shell_sym_1.0.nii.gz\n[ptaylor@planchet: Sat Apr 23 12:50:41 2022] Created with @afni_refacer_make_master_addendum v3.0\n[namystam@cn2881: Fri Mar 31 11:27:43 2023] {AFNI_23.0.07:linux_centos_7_64} 3dAllineate -1Dmatrix_apply tmp.03.mat_t2a.1D -source /usr/local/apps/afni/current/linux_centos_7_64/afni_refacer_shell_sym_1.0.nii.gz -final NN -prefix tmp.04.sh_t2a.nii -master tmp.00.INPUT.nii -float\n[namystam@cn2881: Fri Mar 31 11:27:45 2023] {AFNI_23.0.07:linux_centos_7_64} 3dcalc -a tmp.04.sh_t2a.nii -expr 'a*bool(a)' -ISOLA -prefix tmp.05.sh_t2a_thr.nii\n[namystam@cn2881: Fri Mar 31 11:27:46 2023] {AFNI_23.0.07:linux_centos_7_64} 3drefit -space ORIG tmp.05.sh_t2a_thr.nii\n[namystam@cn2881: Fri Mar 31 11:27:50 2023] ===================================\n[namystam@cn2881: Fri Mar 31 11:27:50 2023] {AFNI_23.0.07:linux_centos_7_64} 3dcalc -a tmp.00.INPUT.nii -c 'tmp.05.sh_t2a_thr.nii[0]' -expr 'step(c)*c*1.974129+iszero(c)*a*step(a)' -prefix tmp.06.reface_plus.orig_mskd.nii -datum float -ISOLA\n[namystam@cn2881: Fri Mar 31 11:27:52 2023] {AFNI_23.0.07:linux_centos_7_64} 3dBlurInMask -input tmp.06.reface_plus.orig_mskd.nii -mask tmp.07.reface_plus.sh_t2a_thr_mskd.nii -FWHM 2.666 -preserve -prefix tmp.99.result.reface_plus.nii\n[namystam@cn2881: Fri Mar 31 11:28:00 2023] {AFNI_23.0.07:linux_centos_7_64} 3dcalc -a tmp.80.nonshort_result.nii -expr a -datum short -nscale -prefix tmp.99.result.reface_plus.nii\n[namystam@cn2881: Fri Mar 31 11:28:01 2023] {AFNI_23.0.07:linux_centos_7_64} 3dcopy tmp.99.result.reface_plus.nii ../test0003.reface_plus.nii.gz\n[jstout@kani.nimh.nih.gov: Mon Mar 24 14:41:30 2025] {AFNI_23.0.03:linux_ubuntu_16_64} 3dcopy ABABABAB_refaced_T1w.nii.gz ABABABAB_refaced+orig~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'AFN_EYZUwFtTR1Pik4Z6nd2oLw~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Mon Mar 24 14:41:30 2025~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 0 11 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 1 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+        102.961         91.493       -137.148
+
+type  = float-attribute
+name  = DELTA
+count = 3
+             -1             -1              1
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+             -1              0              0        102.961              0
+             -1              0         91.493              0              0
+              1       -137.148
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+             -1              0              0        102.961              0
+             -1              0         91.493              0              0
+              1       -137.148
+
+type  = float-attribute
+name  = MARKS_XYZ
+count = 30
+        -999999        -999999        -999999        -999999        -999999
+        -999999        -999999        -999999        -999999        -999999
+        -999999        -999999        -999999        -999999        -999999
+        -999999        -999999        -999999        -999999        -999999
+        -999999        -999999        -999999        -999999        -999999
+        -999999        -999999        -999999        -999999        -999999
+
+type = string-attribute
+name = MARKS_LAB
+count = 200
+'AC superior edge~~~~AC posterior margin~PC inferior edge~~~~First mid-sag pt~~~~Another mid-sag pt~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+type = string-attribute
+name = MARKS_HELP
+count = 2560
+'This is the uppermost point
+on the anterior commisure,
+in the mid-sagittal plane.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~This is the rearmost point
+on the anterior commisure,
+in the mid-sagittal plane.
+[Just a couple mm behind and
+ below the AC superior edge.]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~This is the bottommost point
+on the posterior commissure,
+in the mid-sagittal plane.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~You must also specify two other points in the
+mid-sagittal plane, ABOVE the corpus callosum
+(i.e., in the longitudinal fissure).  These
+points are needed to define the vertical plane.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~You must also specify two other points in the
+mid-sagittal plane, ABOVE the corpus callosum
+(i.e., in the longitudinal fissure).  These
+points are needed to define the vertical plane.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+type = integer-attribute
+name = MARKS_FLAGS
+count = 8
+ 1 1 0 0 0
+ 0 0 0
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 2
+              0           3697
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 1 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 208 256 256 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 1
+ 1
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 1
+              0
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 5
+'ORIG~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
