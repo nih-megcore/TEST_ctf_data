@@ -149,3 +149,30 @@ type = string-attribute
 name = BYTEORDER_STRING
 count = 10
 'LSB_FIRST~
+
+type = integer-attribute
+name = TAGSET_NUM
+count = 2
+ 3 5
+
+type  = float-attribute
+name  = TAGSET_FLOATS
+count = 15
+      -9.039001       -124.507      -11.14799              0              0
+         66.961        -46.507      -45.14799              0              0
+        -73.039        -30.507      -44.14799              0              0
+
+type = string-attribute
+name = TAGSET_LABELS
+count = 30
+'Nasion~Left Ear~Right Ear~~~~~
+
+type = string-attribute
+name = BRICK_LABS
+count = 3
+'#0~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 1
+'~
